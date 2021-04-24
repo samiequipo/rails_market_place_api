@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+//**/++- Guía del libro API On Rails 6 donde aprenderas a:
 
-Things you may want to cover:
+  - Construir respuesta JSON
 
-* Ruby version
+  - Probar tus end-points con pruebas unitarias y funcionales
 
-* System dependencies
+  - Configurar autenticación con JSON WEB Tokens (JWT)
 
-* Configuration
+  - Usar la especificación JSON:API
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  - Optimizar y hacer cache de la API
