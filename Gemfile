@@ -16,6 +16,7 @@ gem 'puma', '~> 4.1'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem "jwt", "~> 2.2"
+gem 'faker', '~> 2.17'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
