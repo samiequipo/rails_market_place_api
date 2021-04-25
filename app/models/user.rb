@@ -3,6 +3,9 @@ class User < ApplicationRecord
   validates_format_of :email, with: /@/
   validates :password_digest, presence: true
 
+  #Relation
+  has_many :products, dependent: :destroy 
+
   # bycript
   has_secure_password
 end
