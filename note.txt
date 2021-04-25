@@ -1,0 +1,51 @@
+//**/++- Guía del libro API On Rails 6 donde aprenderas a: 
+
+  - Construir respuesta JSON
+  - Probar tus end-points con pruebas unitarias y funcionales
+  - Configurar autenticación con JSON WEB Tokens (JWT)
+  - Usar la especificación JSON:API
+  - Optimizar y hacer cache de la API
+
+--------------------------
+
+*/*#$+---CONSTRUYENDO APIS
+
+1)
+   definir la ruta como:
+
+   namespace :api, defaults {format: :json}
+     namespace :v1
+       ... resources ...
+
+2) 
+   generar el controlador usando modulos
+    rails g controller api::vi::users
+  
+3)
+   gem "jwt" ;; Agregar para usar metodos de JWT.encode y JWT.decode
+   ... JWT.encode(payload, key), JWT.decode(payload, key)
+
+4)
+   lib/file y application.rb ;;Agregar
+   lib: JsonWebToken
+   file: Cargar la lib 
+   application: Include Autenticable (archivo en concern)
+
+5) gem "fast_jsonapi" ;; Serializar -> Clases Ruby que convierten Modelo en JSON o Hash
+   rails g serializer User email
+
+---------------
+
+Nota:
+
+  Tienen una app de microservicios, pequeñas API's que se conectan entre si
+utilizando el token
+
+  Api para crear usuarios, el usuario creado tiene su token y con ello
+van a ir a otras Apis a hacer cosas.
+
+
+   La Respuesta de una petición se entrega como JSON.   
+
+
+
